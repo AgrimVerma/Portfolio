@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrim Verma's personal website</title>
+    <title>Personal website</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="left-part">
+    <div class="left-part">
         <div class="inner">
             <nav>
                 <ul class="menu">
@@ -20,12 +21,11 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#projects">Education</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </section>
-
+    </div>
 
 
     <div class="right-part">
@@ -38,33 +38,126 @@
         </section>
 
         <section id="about">
-            <div>
-                <div></div>
-                <div></div>
+           <div class="about_inner">
+                <div class="about_image"><img src="assets/images/9.jpg" alt="not me"></div>
+                <div class="about_content">
+                    <h2 style="margin-bottom: 1em;">Who i am</h2>
+                    <div class="about_content_inner">
+                        <div class="content_left">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem tempore necessitatibus unde facilis exercitationem, quas illo culpa laborum ea recusandae asperiores excepturi tempora possimus assumenda veniam modi optio sed.</p>
+                        </div>
+                        <div class="content_right">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et veniam impedit eos iure, perspiciatis in soluta dicta dolore expedita, accusamus totam fuga rerum vero rem a iusto corporis tempore.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
         <!--
         <section id="projects"></section>
 
         <section id="education"></section> -->
 
         <section id="gallery">
-            <div class="flex-container">
-                <div><img src="assets/images/1.jpg" alt="pic"></div>
-                <div><img src="assets/images/2.jpg" alt="pic"></div>
-                <div><img src="assets/images/3.jpg" alt="pic"></div>
-                <div><img src="assets/images/4.jpg" alt="pic"></div>
-                <div><img src="assets/images/5.jpg" alt="pic"></div>
-                <div><img src="assets/images/6.jpg" alt="pic"></div>
-                <div><img src="assets/images/7.jpg" alt="pic"></div>
-                <div><img src="assets/images/8.jpg" alt="pic"></div>
+            <div>
+                <div class="row">
+                    <div class="column">
+                        <div><img src="assets/images/6.jpg" alt="pic"></div>
+                        <div><img src="assets/images/2.jpg" alt="pic"></div>
+                        <div><img src="assets/images/3.jpg" alt="pic"></div>
+                    </div>
+                    <div class="column">
+                        <div><img src="assets/images/3.jpg" alt="pic"></div>
+                        <div><img src="assets/images/4.jpg" alt="pic"></div>
+                        <div><img src="assets/images/6.jpg" alt="pic"></div>
+                    </div>
+                    <div class="column">
+                        <div><img src="assets/images/5.jpg" alt="pic"></div>
+                        <div><img src="assets/images/3.jpg" alt="pic"></div>
+                        <div><img src="assets/images/2.jpg" alt="pic"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
+
+        <section id="contact">
+            <div class="contact_inner">
+                <h2>Let's Connect</h2>
+                <p>hello and bye let's not talk at all.</p>
+                <div class="contact_flex">
+                    <div class="contact_left">
+                        <div>
+                            <br>
+                            <div>
+                                <label for="Name">Name</label>
+                                <input type="text" name="Name" id="Name">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="Email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="Message">Message</label>
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_right">
+                        <ul class="contact_info">
+                            <li>
+                                <h3>Address</h3>
+                                <span>111,Ayush Vihar
+                                    <br>
+                                    Jankipuram Extension,Lucknow
+                                    <br>
+                                    India
+                                </span>
+                            </li>
+                            <li>
+                                <h3>Email</h3>
+                                <span>
+                                    <a href="tomail:agrimav000@gmail.com">agrimav000@gmail.com</a>
+                                </span>
+                            </li>
+                            <li>
+                                <h3>Phone</h3>
+                                <span>+91-9648498648</span>
+                            </li>
+                            <li>
+                                <h3>Social</h3>
+                                <ul class="icons">
+                                    <li>
+                                        <a class="fab fa-twitter" href="https://www.instagram.com/agrim._.verma/"></a>                                                     
+                                    </li>
+                                    <li>
+                                        <a class="fab fa-facebook-f" href="https://www.instagram.com/agrim._.verma/"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fab fa-github" href="https://www.instagram.com/agrim._.verma/"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fab fa-instagram" href="https://www.instagram.com/agrim._.verma/"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fab fa-linkedin-in" href="https://www.instagram.com/agrim._.verma/"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="footer">
+            <div>
+                ©Agrim Verma.All rights reserved.
+            </div>
+        </footer>
     </div>
 
-
-    <footer></footer>
 </body>
 </html>
