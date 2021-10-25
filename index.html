@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal website</title>
+    <title>agrim.live</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
@@ -15,11 +15,11 @@
     <div class="left-part">
         <div class="inner">
             <nav>
-                <ul class="menu">
+                <ul class="menu" id="menu">
                     <li><a href="#home" >Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#projects">Education</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -44,46 +44,146 @@
                     <h2 style="margin-bottom: 1em;">Who i am</h2>
                     <div class="about_content_inner">
                         <div class="content_left">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem tempore necessitatibus unde facilis exercitationem, quas illo culpa laborum ea recusandae asperiores excepturi tempora possimus assumenda veniam modi optio sed.</p>
+                            <div class="para">
+                                <p>Hello, I am a creative photographer based in New York and happy to travel all over Europe to capture your big day in candid and authentic photos. I will create a lasting memory of the people.</p>
+                            </div>
+                            <br>
+                            <div>
+                                <button class="lbutton">Read More</button>
+                            </div>
                         </div>
                         <div class="content_right">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et veniam impedit eos iure, perspiciatis in soluta dicta dolore expedita, accusamus totam fuga rerum vero rem a iusto corporis tempore.
+                            <ul>
+                                <li><p>
+                                        <span>Birthday: </span>
+                                        April 28
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Age: </span>
+                                        20
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Interest: </span>
+                                        Arts
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Hobby: </span>
+                                        Binge Watching
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--
-        <section id="projects"></section>
+        
 
-        <section id="education"></section> -->
+        <section id="education">
+            <span class="topic">Education</span>
+            <div class="education_inner">
+                <br>
+                <div>
+                    <h2>Rani Laxmi Bai Memorial</h2>
+                    <div>
+                        <h3>High School (2015-2017)</h3>
+                        <p>10 CGPA</p>
+                        <br>
+                        <h3>Intermediate (2017-2019)</h3>
+                        <p>95%</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h2>IIIT Allahabad</h2>
+                    <h3>B.Tech</h3>
+                    <p>Present - 2024</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="projects">
+            <span class="topic">Projects</span>
+            <div class="project_inner">
+                <div class="project_card animate__animated animate__fadeInRight">
+                    <h2>Website</h2>
+                    <div>
+                        <img src="assets/images/9.jpg" alt="project1">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error facere quos voluptatem, iure ducimus, doloremque natus labore nobis provident dignissimos quasi sed asperiores totamluptate!</p>
+                    </div>
+                    <div>
+                        <button class="lbutton"><a href="#">Live Link</a></button>
+                    </div>
+                </div>
+                <div class="project_card animate__animated animate__fadeInRight">
+                    <h2>JS Game</h2>
+                    <div>
+                        <img src="assets/images/9.jpg" alt="project2">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. rnatur aerendis tempore, ad sequi laborum qui fuga nulla assumenda quam! Delectus aperiam possimus odit?</p>
+                    </div>
+                    <div>
+                        <button class="lbutton"><a href="#">Live Link</a></button>
+                    </div>
+                </div>
+                <div class="project_card animate__animated animate__fadeInRight">
+                    <h2>Face Recognisition</h2>
+                    <div>
+                        <img src="assets/images/9.jpg" alt="project3">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum Lorem ipsum dolor sit amet consepisicit. Ad illo, reprehenderit maiores aliquam facere fuga veritatis beatae peaque. dolor sit amet consectetur adipisicing elit. Excepturi inventore possimus sapiente officia mollitia iusto, asperiores reprehenderit. Architecto hic voluptates facilis, dolorum harum, quasi obcaecati ratione quisquam officiis veritatis ullam.</p>
+                    </div>
+                    <div>
+                        <button class="lbutton"><a href="#">Live Link</a></button>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1);slideLeft()">&#10094;</a>
+                <a class="next" onclick="plusSlides(1);slideRight()">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+
+
 
         <section id="gallery">
-            <div>
-                <div class="row">
-                    <div class="column">
+                <div>
+                    <span class="topic">Gallery</span>
+                    <div class="column">       
                         <div><img src="assets/images/6.jpg" alt="pic"></div>
                         <div><img src="assets/images/2.jpg" alt="pic"></div>
                         <div><img src="assets/images/3.jpg" alt="pic"></div>
-                    </div>
-                    <div class="column">
                         <div><img src="assets/images/3.jpg" alt="pic"></div>
                         <div><img src="assets/images/4.jpg" alt="pic"></div>
                         <div><img src="assets/images/6.jpg" alt="pic"></div>
-                    </div>
-                    <div class="column">
                         <div><img src="assets/images/5.jpg" alt="pic"></div>
                         <div><img src="assets/images/3.jpg" alt="pic"></div>
                         <div><img src="assets/images/2.jpg" alt="pic"></div>
                     </div>
                 </div>
-            </div>
         </section>
 
 
+
         <section id="contact">
+            <span class="topic">Contact</span>
             <div class="contact_inner">
-                <h2>Let's Connect</h2>
+                <h2>Get in Touch</h2>
                 <p>hello and bye let's not talk at all.</p>
                 <div class="contact_flex">
                     <div class="contact_left">
@@ -103,6 +203,9 @@
                                 <label for="Message">Message</label>
                                 <textarea name="message" id="message"></textarea>
                             </div>
+                        </div>
+                        <div>
+                            <button class="lbutton">Send Message</button>
                         </div>
                     </div>
                     <div class="contact_right">
@@ -159,5 +262,22 @@
         </footer>
     </div>
 
+    <script src="app.js"></script>
+    <script>
+        function slideRight() {
+            var card = document.getElementsByClassName("project_card");
+            card[0].className += "animate__animated animate__fadeInRight";
+            card[1].className += "animate__animated animate__fadeInRight";
+            card[2].className += "animate__animated animate__fadeInRight"; 
+        }
+    </script>
+    <script>
+        function slideLeft() {
+            var card = document.getElementsByClassName("project_card");
+            card[0].className += "animate__animated animate__fadeInLeft"; 
+            card[1].className += "animate__animated animate__fadeInLeft"; 
+            card[2].className += "animate__animated animate__fadeInLeft"; 
+        }
+    </script>
 </body>
 </html>
