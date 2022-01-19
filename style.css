@@ -186,6 +186,7 @@ h1 {
 .about_image {
     width: 100%;
     height: auto;
+    filter: grayscale(100%);
 }
 
 .about_image img {
@@ -316,7 +317,7 @@ h1 {
     background-color: black;
     text-align: center;
     transition: box-shadow 0.6s;
-    width: 36%;
+    width: 60%;
 }
 
 .project_card:hover {
@@ -324,12 +325,22 @@ h1 {
 }
 
 .project_card img {
-    width: 80%;
-    padding: 2em 0;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 2em 0.5em;
+}
+
+.project_card p {
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+    padding: 2em 1em;
 }
 
 .project_card .lbutton {
     position: relative;
+    float: right;
 }
 
 .project_card .lbutton a {
@@ -344,7 +355,7 @@ h1 {
     position: absolute;
     width: auto;
     padding: 0.5em;
-    margin: 20% 1.5em;
+    margin: 15% 1.5em;
     color: white;
     font-weight: bold;
     font-size: 2em;
@@ -382,37 +393,94 @@ h1 {
     .project_card {
         width: 50%;
     }
+    .project_card img {
+        box-sizing: content-box;
+        float: none;
+        width: 80%;
+        padding: 2em 0;
+    }  
+    .project_card p {
+        box-sizing: content-box;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .project_card .lbutton {
+        float: none;
+    }
+    .prev, .next {
+        margin: 25% 1.5em;
+    }
 }
 
 @media screen and (max-width: 1280px) {
     .project_card {
-        width: 36%;
+        width: 60%;
+    }
+    .project_card img {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        padding: 2em 0.5em;
+    }
+    .project_card p {
+        box-sizing: border-box;
+        float: right;
+        width: 50%;
+        padding: 2em 1em;
+    }
+    .project_card .lbutton {
+        float: right;
+    }
+    .prev, .next {
+        margin: 15% 1.5em;
     }
 }
 @media screen and (max-width: 1160px) {
     .project_card {
-        width: 50%;
+        width: 65%;
     }
     .prev, .next {
-        margin: 25% 0.5em;
+        margin: 15% 1.5em;
     }
 }
 @media screen and (max-width: 920px) {
+    .project_card {
+        width: 75%;
+    }
     .prev, .next {
-        margin: 30% 0.5em;
+        margin: 20% 0.5em;
     }
 }
 @media screen and (max-width: 780px) {
     .project_card {
-        width: 60%;
+        width: 75%;
     }
     .prev, .next {
-        margin: 40% 0em;
+        margin: 20% 0.5em;
     }
 }
 @media screen and (max-width: 640px) {
     .project_card {
-        width: 70%;
+        width: 65%;
+    }
+    .project_card img {
+        box-sizing: content-box;
+        float: none;
+        width: 80%;
+        padding: 2em 0;
+    }  
+    .project_card p {
+        box-sizing: content-box;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .project_card .lbutton {
+        float: none;
+    }
+    .prev, .next {
+        margin: 40% 0.5em;
     }
 }
 @media screen and (max-width: 520px) {
@@ -425,7 +493,7 @@ h1 {
 }
 @media screen and (max-width: 480px) {
     .project_card {
-        width: 88%;
+        width: 85%;
     }
     .prev, .next {
         margin: 60% 0em;
@@ -747,6 +815,9 @@ h1 {
     }
     .icons a {
         font-size: 1.1em;
+    }
+    .left-part {
+        display: none;
     }
     .menu li {
         display: none;
